@@ -1,3 +1,8 @@
 make cursor a specship (visiting the planets)
 earth unclickable
 hover'da planet etrafinda faded halka ciksin
+
+
+semantic html:
+  footer: credits, link to wiki, logo at bot left
+  header: title, D2 interactie map etc etc
