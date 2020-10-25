@@ -7,7 +7,7 @@ semantic html:
   footer: credits, link to wiki, logo at bot left
   header: title, D2 interactie map etc etc
 
-responsive CSS
+responsive CSS in an externatl sheet
 
 flex and or grid display
 
