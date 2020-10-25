@@ -9,6 +9,5 @@ semantic html:
 
 responsive CSS in an externatl sheet
 
-flex and or grid display
 
 1 media query
