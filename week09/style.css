@@ -1,0 +1,238 @@
+h1 {
+  text-align: center;
+  color: white;
+}
+h3{
+  color: white;
+  font-size: 32px;
+  font-family: "Tahoma", "Helvetica", sans-serif;
+}
+
+h2{
+  color: white;
+  font-size: 48px;
+  font-family: "Tahoma", "Helvetica", sans-serif;
+  text-align: center;
+  margin-top: 10px;
+}
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+  color: white;
+  background: rgba(0,0,0,0.5);
+  font-size: 24px;
+  font-family: "Helvetica", sans-serif;
+}
+body {
+  background-image: url("images/bg.jpg");
+  background-repeat: repeat-y;
+}
+p{
+  color: white;
+  font-size: 24px;
+  font-family: "Tahoma", "Helvetica", sans-serif;
+}
+
+
+
+.wrapper{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap:40px;
+  margin-top: 150px;
+  width: 100%
+}
+
+.loretab{
+    background: rgba(0,0,0,0.5);
+    padding: 40px;
+    padding-bottom: 100px;
+    margin-right: 300px;
+    margin-left: 40px;
+    border-style: solid;
+    border-color: white;
+}
+
+.nested{
+  padding: 20px;
+
+}
+/*
+.earthclose{
+  width: 50%;
+  margin-right: 200px;
+}*/
+
+
+
+
+
+.planets{
+  align-items: center;
+}
+#earth{
+  position: absolute;
+
+  top: 250px;
+  left: 1200px;
+}
+#mars{
+  position: absolute;
+
+  top: 700px;
+  left: 720px;
+}
+#venus{
+  position: absolute;
+
+  top: 270px;
+  left: 500px;
+}
+#sun{
+  position: absolute;
+  top: 350px;
+  left: 810px;
+}
+
+
+@media only screen and (max-width: 1168px) {
+  body{
+    background-size: 400%;
+    background-position: center;
+    background-position: top;
+}
+
+  .wrapper{
+    display: block;
+  }
+
+
+
+  .loretab{
+    margin: 0 auto;
+  }
+  .planets{
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+  }
+  #sun{
+    top: 100px;
+    left: 350px;
+  }
+  #venus{
+    top: 420px;
+    left: 400px;
+  }
+  #earth{
+    top: 700px;
+    left: 400px;
+  }
+  #mars{
+    top:950px;
+    left: 400px;
+  }
+
+}
+
+
+@media only screen and (max-width: 414px) {
+  body{
+    background-size: 700%;
+    background-position: center;
+    background-position: top;
+  }
+
+
+  .loretab{
+    width: 100%;
+    margin-left: 10px;
+
+    margin-bottom: 40px;
+  }
+
+  #sun{
+    top: 150px;
+    left: 350px;
+  }
+  #venus{
+    top: 520px;
+    left: 400px;
+  }
+  #earth{
+    top: 800px;
+    left: 400px;
+  }
+  #mars{
+    top: 1950px;
+    left: 400px;
+  }
+}
+
+
+#suntext{
+  position: absolute;
+  top: 450px;
+  left: 800px;
+}
+#earthtext{
+  position: absolute;
+  top: 250px;
+  left: 1100px;
+}
+#marstext{
+  position: absolute;
+  top: 630px;
+  left: 650px;
+}
+#venustext{
+  position: absolute;
+  top: 280px;
+  left: 380px;
+}
+
+
+
+
+
+
+/*
+#earthclose{
+  position: absolute;
+  top: 100px;
+  left: 800px;
+}
+*/
+
+/*
+#marsclose{
+  position: absolute;
+  top: 100px;
+  left: 800px;
+}
+
+#venusclose{
+  position: absolute;
+  top: 140px;
+  left: 840px;
+}
+*/
+
+/*
+.loretab{
+  position: absolute;
+  background-color: black;
+  float: left;
+  text-align: left;
+  color: white;
+  line-height: 200%;
+  font-size: large;
+  padding: 60px;
+  top: 150px;
+  margin
+}
+*/
