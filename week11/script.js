@@ -1,6 +1,7 @@
 
 
 let para = document.querySelector('p');
+let page = 0;
 let homeButt = document.querySelector("button.home");
 let moreButt = document.querySelector("button.more");
 
@@ -10,7 +11,6 @@ moreButt.addEventListener('click', more);
 
 
 
-let page = 0;
 
 function more(){
   page += 1
@@ -19,6 +19,7 @@ function more(){
     moreButt.style.visibility = "hidden";
   }
 }
+
 
 function home{
   homeButt.href = "https://derekdincer.github.io/"
