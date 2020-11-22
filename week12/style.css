@@ -1,0 +1,97 @@
+body{
+  background: #7ede7e;
+}
+
+header{
+  background: #093b1d;
+  padding: 10px 20px;
+  margin: 10px;
+}
+h1{
+  color: white;
+  text-align: center;
+  font-size: 32px;
+  font-family: "Helvetica";
+}
+
+footer{
+  background: #093b09;
+  padding: 2px 20px;
+  margin: 10px;
+}
+h2{
+  color: white;
+  text-align: left;
+  font-size: 24px;
+  font-family: "Helvetica";
+}
+
+.instructions{
+  color: #222733;
+  text-align: left;
+  font-size: 18px;
+  margin-left: 20px;
+  text-decoration: underline;
+  font-family: "Helvetica";
+}
+
+
+
+.builder{
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+  font-family: "Helvetica";
+}
+
+.roster{
+  background: #09700c;
+  color: #f7ecd7;
+  font-size: 24px;
+  padding-right: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.ingredient{
+  display: inline-flex;
+}
+
+.theBurger{
+  margin-left: 100px;
+  /*display: flex;*/
+}
+#imgbeef1{margin-left: -512px; display: none;}
+#imgbeef2{margin-left: -512px; display: none;}
+#imgimp{margin-left: -512px; margin-bottom: 30px; display: none;}
+#imgche{margin-left: -512px; display: none;}
+#imglet{margin-left: -512px; display: none;}
+#imgtomat{margin-left: -512px; display: none;}
+#imgoni{margin-left: -512px; display: none;}
+#imgtopbun{margin-left: -512px;}
+
+.total{
+  display: inline-flex;
+  color: #222733;
+  font-size: 24px;
+  margin-top: 256px;
+}
+
+#individual{
+  margin-top: 256px;
+}
+#NUM{
+  margin-top: 24px;
+  padding-left: 6px;
+}
+
+button{
+  margin: 20px;
+  background: #f7ecd7;
+  color: #222733;
+}
+button:hover{
+  background-color: #e8aa33;
+  color: #f7ecd7;
+}
