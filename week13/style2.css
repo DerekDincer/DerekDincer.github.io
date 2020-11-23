@@ -1,0 +1,48 @@
+body{
+  background: #7ede7e;
+}
+
+header{
+  background: #093b1d;
+  padding: 10px 20px;
+  margin: 10px;
+}
+h1{
+  color: white;
+  text-align: center;
+  font-size: 32px;
+  font-family: "Helvetica";
+}
+
+footer{
+  background: #093b09;
+  padding: 10px 20px;
+  margin-top: 250px;
+}
+h2{
+  color: white;
+  text-align: left;
+  font-size: 24px;
+  font-family: "Helvetica";
+}
+.txt{
+  margin-top: 100px;
+  text-align: center;
+  font-size: 24px;
+  font-family: "Helvetica";
+}
+
+
+button{
+  margin-left: 780px;
+  margin-top: 100px;
+  background: #6fc924;
+  color: #222733;
+  font-size: 48px;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+button:hover{
+  background-color: #e8aa33;
+  color: #f7ecd7;
+}
