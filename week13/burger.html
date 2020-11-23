@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+    <title>Food for Thought</title>
+		 <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ </head>
+
+  <body>
+
+    <header>
+			<h1>
+        	Food for Thought - Carbon Emissions of a Burger
+    	</h1>
+		</header>
+
+<!-- instructions/info -->
+	<div class="instructions">
+		<i>
+    <p>- Build your burger with the ingredients given.</p>
+    <p>- Left click to select. Double click to remove.</p>
+		</i>
+	</div>
+<!-- -->
+
+<!-- the burger builder complex in the middle of the page -->
+	<section class="builder">
+
+		<!-- ingredients list on the left -->
+		<div class="roster">
+     	<div class="ingredient">
+			 	<button id="patty">+</button>
+				<p>Add beef patty</p>
+		 	</div>
+
+			<div class="ingredient">
+     		<button id="impossible">+</button>
+				<p>Add Impossible patty</p>
+	 		</div>
+
+			<div class="ingredient">
+				<button id="cheese">+</button>
+				<p>Add dairy cheese</p>
+			</div>
+
+			<div class="ingredient">
+				<button id="lettuce">+</button>
+				<p>Add lettuce</p>
+			</div>
+
+		 	<div class="ingredient">
+     		<button id="tomato">+</button>
+				<p>Add tomatoes</p>
+	 		</div>
+
+			<div class="ingredient">
+     		<button id="onion">+</button>
+				<p>Add onions</p>
+	 		</div>
+
+			<!--
+			<div class="ingredient">
+     		<button id="pickle">+</button>
+				<p>Add pickles</p>
+	 		</div>
+			-->
+
+
+
+			<!--
+			<div class="ingredient">
+     		<button id="dairyFree">+</button>
+				<p>Add dairy-free cheese</p>
+	 		</div>
+			-->
+
+    </div>
+		<!-- -->
+
+		<!-- burger on the right -->
+		<div class="theBurger">
+
+			<div class="layers">
+				<img src="botbun.png" id="imgbotbun">
+				<img src="beef1.png" id="imgbeef1">
+				<img src="beef2.png" id="imgbeef2">
+				<img src="imp.png" id="imgimp">
+				<img src="cheese.png" id="imgche">
+				<img src="lettuce.png" id="imglet">
+				<img src="tomat.png" id="imgtomat">
+				<img src="oni.png" id="imgoni">
+				<img src="topbun.png" id="imgtopbun">
+			</div>
+
+
+
+
+		</div>
+		<div class="total">
+			<p>Total: </p>
+			<div id="NUM">
+				<p></p>
+			</div>
+		</div>
+		<!-- <div id="individual">
+			<p></p>
+		</div> -->
+
+
+		<!-- -->
+
+	</section>
+<!-- -->
+
+		<footer>
+			<h2><a	href="https://derekdincer.github.io/week13/index.html">
+				< Back
+			</a></h2>
+		</footer>
+
+
+
+
+
+
+<!-- external JS file won't flipping work so here is the darn script -->
+		<script>
+			/*
+			$(document).ready(function(){
+				$(".roster").hide();
+			});
+
+
+			$(".ingredient" ).hover(function() {
+    		$(this).color: red;
+  		});*/
+
+			let imgbeef1 = document.getElementById("imgbeef1");
+			let imgbeef2 = document.getElementById("imgbeef2");
+			let imgimp = document.getElementById("imgimp");
+			let imgche = document.getElementById("imgche");
+			let imglet = document.getElementById("imglet");
+			let imgtomat = document.getElementById("imgtomat");
+			let imgoni = document.getElementById("imgoni");
+
+			let total = document.getElementById("NUM"); 					/*total represents the amount of CO2 footprint of the burger*/
+			let sum = 0; 																					/*sum will be the number value to be added on to with each ingredient*/
+
+			let pattyButton = document.getElementById("patty"); 	/*pattyButton is the "+" button next to the patty ingredient*/
+			pattyButton.addEventListener('click', addPatty); 			/*addPatty function waits for pattyButton to be pressed*/
+			pattyButton.addEventListener('dblclick', removePatty);
+			let addedPatty = 0;
+
+			function addPatty(){
+				if (addedPatty == 0){
+					sum += 1910;
+					total.textContent = " " + sum + "g";
+				}
+				addedPatty = 1;
+				imgbeef1.style.display = "inline-flex";
+				/*if (addedImp > 0){
+					imgimp.style.display = "none";
+					sum -= 410;
+					addedImp = 0;
+				}*/
+			}
+			function removePatty(){
+				if (addedPatty == 1){
+					sum -= 1910;
+					total.textContent = " " + sum + "g";
+				}
+				addedPatty = 0;
+				imgbeef1.style.display = "none";
+			}
+
+
+			let tomatoButton = document.getElementById("tomato");
+			tomatoButton.addEventListener('click', addTomato);
+			tomatoButton.addEventListener('dblclick', removeTomato);
+			let addedTomato = 0;
+
+			function addTomato(){
+				if (addedTomato == 0){
+					sum += 10;
+					total.textContent = " " + sum + "g";
+				}
+				addedTomato = 1;
+				imgtomat.style.display = "inline-flex";
+			}
+			function removeTomato(){
+				if (addedTomato == 1){
+					sum -= 10;
+					total.textContent = " " + sum + "g";
+				}
+				addedTomato = 0;
+				imgtomat.style.display = "none";
+			}
+
+			let lettuceButton = document.getElementById("lettuce");
+			lettuceButton.addEventListener('click', addLettuce);
+			lettuceButton.addEventListener('dblclick', removeLettuce);
+			let addedLettuce = 0;
+
+			function addLettuce(){
+				if (addedLettuce == 0){
+					sum += 10;
+					total.textContent = " " + sum + "g";
+				}
+				addedLettuce = 1;
+				imglet.style.display = "inline-flex";
+			}
+			function removeLettuce(){
+				if (addedLettuce == 1){
+					sum -= 10;
+					total.textContent = " " + sum + "g";
+				}
+				addedLettuce = 0;
+				imglet.style.display = "none";
+			}
+
+			let cheButton = document.getElementById("cheese");
+			cheButton.addEventListener('click', addChe);
+			cheButton.addEventListener('dblclick', removeChe);
+			let addedChe = 0;
+
+			function addChe(){
+				if (addedChe == 0){
+					sum += 250;
+					total.textContent = " " + sum + "g";
+				}
+				addedChe = 1;
+				imgche.style.display = "inline-flex";
+			}
+			function removeChe(){
+				if (addedChe == 1){
+					sum -= 250;
+					total.textContent = " " + sum + "g";
+				}
+				addedChe = 0;
+				imgche.style.display = "none";
+			}
+
+			let oniButton = document.getElementById("onion");
+			oniButton.addEventListener('click', addOni);
+			oniButton.addEventListener('dblclick', removeOni);
+			let addedOni = 0;
+
+			function addOni(){
+				if (addedOni == 0){
+					sum += 10;
+					total.textContent = " " + sum + "g";
+				}
+				addedOni = 1;
+				imgoni.style.display = "inline-flex";
+			}
+			function removeOni(){
+				if (addedOni == 1){
+					sum -= 10;
+					total.textContent = " " + sum + "g";
+				}
+				addedOni = 0;
+				imgoni.style.display = "none";
+			}
+
+			let impButton = document.getElementById("impossible");
+			impButton.addEventListener('click', addImp);
+			impButton.addEventListener('dblclick', removeImp);
+			let addedImp = 0;
+
+			function addImp(){
+				if (addedImp == 0){
+					sum += 410;
+					total.textContent = " " + sum + "g";
+				}
+				addedImp = 1;
+				imgimp.style.display = "inline-flex";
+				/*if (addedPatty > 0){
+					imgbeef1.style.display = "none";
+					sum -= 1910;
+					addedPatty = 0;
+				}*/
+			}
+			function removeImp(){
+				if (addedImp == 1){
+					sum -= 410;
+					total.textContent = " " + sum + "g";
+				}
+				addedImp = 0;
+				imgimp.style.display = "none";
+			}
+
+			console.log(addedPatty);
+			console.log(addedImp);
+
+			/*
+			imgbeef1.addEventListener('mouseover', entbeef1);
+				imgbeef1.addEventListener('mouseout', extbeef1);
+			imgimp.addEventListener('mouseover', entimp);
+				imgimp.addEventListener('mouseout', extimp);
+			imgche.addEventListener('mouseover', entche);
+				imgche.addEventListener('mouseout', extche);
+			imglet.addEventListener('mouseover', entlet);
+				imglet.addEventListener('mouseout', extlet);
+			imgtomat.addEventListener('mouseover', enttomat);
+				imgtomat.addEventListener('mouseout', exttomat);
+			imgoni.addEventListener('mouseover', entoni);
+				imgoni.addEventListener('mouseout', extoni);
+
+			let contribution = document.getElementById("individual");
+
+			function entbeef1(){contribution.textContent = "1910g";}
+			function extbeef1(){contribution.textContent = "0g";}
+			function entimp(){contribution.textContent = "410g";}
+			function extimp(){contribution.textContent = "0g";}
+			function entche(){contribution.textContent = "250g";}
+			function extche(){contribution.textContent = "0g";}
+			function entlet(){contribution.textContent = "10g";}
+			function extlet(){contribution.textContent = "0g";}
+			function enttomat(){contribution.textContent = "10g";}
+			function exttomat(){contribution.textContent = "0g";}
+			function entoni(){contribution.textContent = "10g";}
+			function extoni(){contribution.textContent = "0g";}
+			*/
+
+		</script>
+<!-- -->
+
+</body>
+</html>
