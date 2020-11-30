@@ -1,0 +1,26 @@
+body{
+  background-color: #292730;
+}
+
+
+
+.splash{
+  background-color: #3f3952;
+  color: white;
+  text-align: center;
+  padding: 100px;
+  margin: 100px;
+  font-family: Helvetica;
+  font-size: 150%;
+}
+
+
+p{
+  background-color: #4b406b;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin: 50px;
+  font-family: Helvetica;
+  font-size: 150%;
+}
