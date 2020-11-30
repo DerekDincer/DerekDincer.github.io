@@ -24,3 +24,9 @@ p{
   font-family: Helvetica;
   font-size: 150%;
 }
+
+wframe{
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
