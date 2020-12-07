@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+    <title>Episode Star Quiz Wars 7 The Code Dev Wakens</title>
+		 <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="quiz.css">
+		<!-- <script src="script.js"></script> -->
+ </head>
+
+ <body>
+
+
+    <h2 class="quizTxt">
+        bla bla first question.
+    </h2>
+
+
+<div class="ALLanswers">
+  <div class="answersrow">
+      <button class="choice" id="answerA">A</button>
+      <button class="choice" id="answerB">B</button>
+  </div>
+  <!-- <div class="answersrow">
+      <button class="choice" id="answerC">C</button>
+      <button class="choice" id="answerD">D</button>
+  </div> -->
+</div>
+
+<div class="answersrow"><a href="index.html"></a>
+  <button class="submit">
+    Submit
+  </button>
+</div>
+
+
+
+
+
+
+<script>
+
+    	let page = 1;
+    	let ques = document.querySelector("h2.quizTxt");
+
+      let clickSubmit = document.querySelector("button.submit");
+
+      let Apoint = 0;
+    	let ansA = document.querySelector("button#answerA");
+    	ansA.addEventListener('click', chosenA);
+
+      let Bpoint = 0;
+      let ansB = document.querySelector("button#answerB");
+    	ansB.addEventListener('click', chosenB);
+
+
+
+    function chosenA(){
+    	  page += 1
+        Apoint += 1
+    	  if (page == 2){
+    	    ques.textContent = "bla bla second question." + Apoint+"A" + Bpoint+"B";
+    	  }
+
+    	  if (page == 3){
+    	    ques.textContent = "bla bla third question." + Apoint+"A" + Bpoint+"B";
+    	  }
+
+        if (page == 4){
+          ques.textContent = "bla bla third question." + Apoint+"A" + Bpoint+"B";
+          clickSubmit.style.visibility = "visible";
+        }
+    	}
+
+
+      function chosenB(){
+    	  page += 1
+        Bpoint += 1
+    	  if (page == 2){
+    	    ques.textContent = "bla bla second question" + Apoint+"A" + Bpoint+"B";
+    	  }
+
+    	  if (page == 3){
+    	    ques.textContent = "bla bla third question" + Apoint+"A" + Bpoint+"B";
+    	  }
+
+        if (page == 4){
+          ques.textContent = "bla bla third question" + Apoint+"A" + Bpoint+"B";
+          clickSubmit.style.visibility = "visible";
+        }
+    	}
+
+
+
+
+</script>
+
+
+
+
+
+
+
+  </body>
+</html>
