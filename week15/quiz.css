@@ -1,0 +1,55 @@
+body {
+    background-color:#191919;
+}
+
+.quizTxt {
+  color: yellow;
+    margin-top: 200px;
+
+    font-size: 32px;
+    text-align: center;
+    font-family: Helvetica
+}
+
+
+div.answersrow{
+  margin-top: 60px;
+  text-align: center;
+}
+
+.submit{
+  visibility: hidden;
+  color: black;
+  background-color: yellow;
+  padding: 16px ;
+  font-size: 24px;
+  font-family: Helvetica
+
+}
+
+
+#answerA{
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 16px ;
+  font-size: 24px;
+  font-family: Helvetica
+}#answerB{
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 16px ;
+  font-size: 24px;
+  font-family: Helvetica
+}#answerC{
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 16px ;
+  font-size: 24px;
+  font-family: Helvetica
+}#answerD{
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 16px ;
+  font-size: 24px;
+  font-family: Helvetica
+}

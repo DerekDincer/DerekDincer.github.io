@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+    <title>Episode Star Quiz Wars 7 The Code Dev Wakens</title>
+		 <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="quiz.css">
+		<!-- <script src="script.js"></script> -->
+ </head>
+
+ <body>
+
+
+    <h2 class="quizTxt">
+        1 ⦁ How prepared are you in general?
+    </h2>
+
+
+<div class="ALLanswers">
+  <div class="answersrow">
+      <button class="choice" id="answerA">A) I only prepare for the immediate future.</button>
+  </div>
+  <!-- <div class="answersrow">
+
+  </div> -->
+	<div class="answersrow">
+			<button class="choice" id="answerB">B) I'm more impulsive.</button>
+	</div>
+	<div class="answersrow">
+			<button class="choice" id="answerC">C) I'm organized. Period.</button>
+	</div>
+	<div class="answersrow">
+			<button class="choice" id="answerD">D) I only organize work related things.</button>
+	</div>
+</div>
+
+
+<div class="answersrow">
+  <a>
+  <button class="submit">
+    Submit
+  </button>
+  </a>
+</div>
+
+
+
+
+
+
+<script>
+
+    	let page = 1;
+			 let plyrX = 0;
+			 let plyrY = 0;
+    	let ques = document.querySelector("h2.quizTxt");
+
+
+       let Apoint = 0;
+    	let ansA = document.querySelector("button#answerA");
+    	ansA.addEventListener('click', chosenA);
+       let Bpoint = 0;
+      let ansB = document.querySelector("button#answerB");
+    	ansB.addEventListener('click', chosenB);
+			 let Cpoint = 0;
+			let ansC = document.querySelector("button#answerC");
+			ansC.addEventListener('click', chosenC);
+			 let Dpoint = 0;
+			let ansD = document.querySelector("button#answerD");
+			ansD.addEventListener('click', chosenD);
+
+
+    	let clickSubmit = document.querySelector("button.submit");
+			clickSubmit.addEventListener('click', chosenSubmit);
+
+//----------------------------------------------------------------------------------------------//
+
+    function chosenA(){
+    	  page += 1
+        Apoint += 1
+
+				plyrX += -5;
+				plyrY += +5;
+
+    	  if (page == 2){
+    	    ques.textContent = "2 ⦁ Would you consider yourself a charmer?" //+ plyrX +"and"+ plyrY;
+																	//+ Apoint+"A" + Bpoint+"B"+ Cpoint+"C" + Dpoint+"D";
+					ansA.textContent = "A) Didn't think about that, but I think people like me."
+					ansB.textContent = "B) Not really."
+					ansC.textContent = "C) I'm an acquired taste."
+					ansD.textContent = "D) Yes."
+    	  }
+    	  if (page == 3){
+    	    ques.textContent = "3 ⦁ Do you think about the consequences of your actions, or how they might affect others?"
+																	//+ plyrX +"and"+ plyrY;
+																	ansA.textContent = "A) Nope."
+																	ansB.textContent = "B) Pretty often."
+																	ansC.textContent = "C) Yes, but I try not to dwell on it. Every man for himself."
+																	ansD.textContent = "D) It does dawn on me from time to time."
+    	  }
+        if (page == 4){
+          ques.textContent = "4 ⦁	Do you believe in destiny? That things happen because of a reason?"
+																	//+ plyrX +"and"+ plyrY;
+																	ansA.textContent = "A) I don't care."
+																	ansB.textContent = "B) Some things are predetermined. Some things are beyond us."
+																	ansC.textContent = "C) We can alter our destinies."
+																	ansD.textContent = "D) There are no supernatural forces acting on our lives."
+        }
+				if (page == 5){
+          ques.textContent = "Last Question ⦁ Do you second guess your choices in life?"
+																	//+ plyrX +"and"+ plyrY;
+																	ansA.textContent = "A) No, I’m quite sure of myself."
+																	ansB.textContent = "B) Yes, but I know I did the right thing."
+																	ansC.textContent = "C) Yes, and they make me feel uncomfortable."
+																	ansD.textContent = "D) I don’t, but I sometimes feel regret afterwards."
+        }
+				if (page == 6){
+          ques.textContent = "Last Question ⦁ Do you second guess your choices in life?"
+																	//+ plyrX +"and"+ plyrY;
+																	ansA.textContent = "A) No, I’m quite sure of myself."
+																	ansB.textContent = "B) Yes, but I know I did the right thing."
+																	ansC.textContent = "C) Yes, and they make me feel uncomfortable."
+																	ansD.textContent = "D) I don’t, but I sometimes feel regret afterwards."
+
+					clickSubmit.style.visibility = "visible";
+        }
+    	}
+			//--------------------------------------------------------------------------------------------//
+			function chosenB(){
+	    	  page += 1
+	        Bpoint += 1
+
+					plyrX += -5;
+					plyrY += -5;
+
+	    	  if (page == 2){
+	    	    ques.textContent = "2 ⦁ Would you consider yourself a charmer?"
+																		//+ plyrX +"and"+ plyrY;
+																		ansA.textContent = "A) Didn't think about that, but I think people like me."
+																		ansB.textContent = "B) Not really."
+																		ansC.textContent = "C) I'm an acquired taste."
+																		ansD.textContent = "D) Yes."
+	    	  }
+	    	  if (page == 3){
+	    	    ques.textContent = "3 ⦁ Do you think about the consequences of your actions, or how they might affect others?"
+																		//+ plyrX +"and"+ plyrY;
+																		ansA.textContent = "A) Nope."
+																		ansB.textContent = "B) Pretty often."
+																		ansC.textContent = "C) Yes, but I try not to dwell on it. Every man for himself."
+																		ansD.textContent = "D) It does dawn on me from time to time."
+	    	  }
+					if (page == 4){
+	          ques.textContent = "4 ⦁	Do you believe in destiny? That things happen because of a reason?"
+																		//+ plyrX +"and"+ plyrY;
+																		ansA.textContent = "A) I don't care."
+																		ansB.textContent = "B) Some things are predetermined. Some things are beyond us."
+																		ansC.textContent = "C) We can alter our destinies."
+																		ansD.textContent = "D) There are no supernatural forces acting on our lives."
+	        }
+					if (page == 5){
+	          ques.textContent = "Last Question ⦁ Do you second guess your choices in life?"
+																		//+ plyrX +"and"+ plyrY;
+																		ansA.textContent = "A) No, I’m quite sure of myself."
+																		ansB.textContent = "B) Yes, but I know I did the right thing."
+																		ansC.textContent = "C) Yes, and they make me feel uncomfortable."
+																		ansD.textContent = "D) I don’t, but I sometimes feel regret afterwards."
+	        }
+					if (page == 6){
+	          ques.textContent = "Last Question ⦁ Do you second guess your choices in life?"
+																		//+ plyrX +"and"+ plyrY;
+																		ansA.textContent = "A) No, I’m quite sure of myself."
+																		ansB.textContent = "B) Yes, but I know I did the right thing."
+																		ansC.textContent = "C) Yes, and they make me feel uncomfortable."
+																		ansD.textContent = "D) I don’t, but I sometimes feel regret afterwards."
+
+						clickSubmit.style.visibility = "visible";
+	        }
+	    	}
+				function chosenC(){
+		    	  page += 1
+		        Cpoint += 1
+
+						plyrX += 5;
+						plyrY += 5;
+
+		    	  if (page == 2){
+		    	    ques.textContent = "2 ⦁ Would you consider yourself a charmer?"
+																			//+ plyrX +"and"+ plyrY;
+																			ansA.textContent = "A) Didn't think about that, but I think people like me."
+																			ansB.textContent = "B) Not really."
+																			ansC.textContent = "C) I'm an acquired taste."
+																			ansD.textContent = "D) Yes."
+		    	  }
+		    	  if (page == 3){
+		    	    ques.textContent = "3 ⦁ Do you think about the consequences of your actions, or how they might affect others?"
+																			//+ plyrX +"and"+ plyrY;
+																			ansA.textContent = "A) Nope."
+																			ansB.textContent = "B) Pretty often."
+																			ansC.textContent = "C) Yes, but I try not to dwell on it. Every man for himself."
+																			ansD.textContent = "D) It does dawn on me from time to time."
+		    	  }
+						if (page == 4){
+		          ques.textContent = "4 ⦁	Do you believe in destiny? That things happen because of a reason?"
+																			//+ plyrX +"and"+ plyrY;
+																			ansA.textContent = "A) I don't care."
+																			ansB.textContent = "B) Some things are predetermined. Some things are beyond us."
+																			ansC.textContent = "C) We can alter our destinies."
+																			ansD.textContent = "D) There are no supernatural forces acting on our lives."
+		        }
+						if (page == 5){
+		          ques.textContent = "Last Question ⦁ Do you second guess your choices in life?"
+																			//+ plyrX +"and"+ plyrY;
+																			ansA.textContent = "A) No, I’m quite sure of myself."
+																			ansB.textContent = "B) Yes, but I know I did the right thing."
+																			ansC.textContent = "C) Yes, and they make me feel uncomfortable."
+																			ansD.textContent = "D) I don’t, but I sometimes feel regret afterwards."
+		        }
+						if (page == 6){
+		          ques.textContent = "Last Question ⦁ Do you second guess your choices in life?"
+																			//+ plyrX +"and"+ plyrY;
+																			ansA.textContent = "A) No, I’m quite sure of myself."
+																			ansB.textContent = "B) Yes, but I know I did the right thing."
+																			ansC.textContent = "C) Yes, and they make me feel uncomfortable."
+																			ansD.textContent = "D) I don’t, but I sometimes feel regret afterwards."
+
+							clickSubmit.style.visibility = "visible";
+		        }
+		    	}
+					function chosenD(){
+			    	  page += 1
+			        Dpoint += 1
+
+							plyrX += 5;
+							plyrY += -5;
+
+			    	  if (page == 2){
+			    	    ques.textContent = "2 ⦁ Would you consider yourself a charmer?"
+																				//+ plyrX +"and"+ plyrY;
+																				ansA.textContent = "A) Didn't think about that, but I think people like me."
+																				ansB.textContent = "B) Not really."
+																				ansC.textContent = "C) I'm an acquired taste."
+																				ansD.textContent = "D) Yes."
+			    	  }
+			    	  if (page == 3){
+			    	    ques.textContent = "3 ⦁ Do you think about the consequences of your actions, or how they might affect others?"
+																				//+ plyrX +"and"+ plyrY;
+																				ansA.textContent = "A) Nope."
+																				ansB.textContent = "B) Pretty often."
+																				ansC.textContent = "C) Yes, but I try not to dwell on it. Every man for himself."
+																				ansD.textContent = "D) It does dawn on me from time to time."
+			    	  }
+							if (page == 4){
+			          ques.textContent = "4 ⦁	Do you believe in destiny? That things happen because of a reason?"
+																				//+ plyrX +"and"+ plyrY;
+																				ansA.textContent = "A) I don't care."
+																				ansB.textContent = "B) Some things are predetermined. Some things are beyond us."
+																				ansC.textContent = "C) We can alter our destinies."
+																				ansD.textContent = "D) There are no supernatural forces acting on our lives."
+			        }
+							if (page == 5){
+			          ques.textContent = "Last Question ⦁ Do you second guess your choices in life?"
+																				//+ plyrX +"and"+ plyrY;
+																				ansA.textContent = "A) No, I’m quite sure of myself."
+																				ansB.textContent = "B) Yes, but I know I did the right thing."
+																				ansC.textContent = "C) Yes, and they make me feel uncomfortable."
+																				ansD.textContent = "D) I don’t, but I sometimes feel regret afterwards."
+			        }
+							if (page == 6){
+			          ques.textContent = "Last Question ⦁ Do you second guess your choices in life?"
+																				//+ plyrX +"and"+ plyrY;
+																				ansA.textContent = "A) No, I’m quite sure of myself."
+																				ansB.textContent = "B) Yes, but I know I did the right thing."
+																				ansC.textContent = "C) Yes, and they make me feel uncomfortable."
+																				ansD.textContent = "D) I don’t, but I sometimes feel regret afterwards."
+
+								clickSubmit.style.visibility = "visible";
+			        }
+			    	}
+
+
+
+
+
+
+
+
+					function chosenSubmit(){
+
+						if (plyrX < 0 && plyrY > 0){
+							location.assign("poe.html");
+
+						}
+						if (plyrX < 0 && plyrY < 0){
+							location.assign("luke.html");
+
+						}
+						if (plyrX > 0 && plyrY > 0){
+							location.assign("lando.html");
+
+						}
+						if (plyrX > 0 && plyrY < 0){
+							location.assign("han.html");
+
+						}
+
+					}
+
+
+
+</script>
+
+
+
+
+
+
+
+  </body>
+</html>

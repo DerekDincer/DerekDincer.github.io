@@ -1,0 +1,22 @@
+body {
+    background-color:#191919;
+}
+
+.startTxt {
+    color: yellow;
+    margin-top: 300px;
+    margin-bottom: 150px;
+    font-size: 64px;
+    text-align: center;
+    font-family: Helvetica
+}
+
+div{
+  margin-top: 40px;
+  text-align: center;
+}
+.start{
+  padding: 16px ;
+  font-size: 32px;
+  font-family: Helvetica
+}
