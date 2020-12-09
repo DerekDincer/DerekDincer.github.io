@@ -32,8 +32,11 @@ div.answersrow{
   padding: 16px ;
   font-size: 24px;
   font-family: Helvetica
-
 }
+.submit:hover{
+  background-color: #d69e04;
+}
+
 
 
 #answerA{

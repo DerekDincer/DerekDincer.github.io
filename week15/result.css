@@ -22,6 +22,9 @@ div{
   font-size: 32px;
   font-family: Helvetica
 }
+.start:hover{
+  background-color: #d69e04;
+}
 
 img{
   display: block;
