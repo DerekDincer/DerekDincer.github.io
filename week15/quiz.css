@@ -17,6 +17,10 @@ div.answersrow{
   text-align: center;
 }
 
+.choice:hover{
+  background: linear-gradient(to right, #1c97d9, #f0edf2, #cf261d);
+}
+
 .submit{
   visibility: hidden;
   color: black;
