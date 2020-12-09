@@ -6,6 +6,8 @@ body {
     color: yellow;
     margin-top: 200px;
     margin-bottom: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
     font-size: 64px;
     text-align: center;
     font-family: Helvetica
@@ -13,6 +15,8 @@ body {
 .startTxt2 {
     color: yellow;
     margin-top: 80px;
+    margin-left: 50px;
+    margin-right: 50px;
     font-size: 32px;
     text-align: center;
     font-family: Helvetica
