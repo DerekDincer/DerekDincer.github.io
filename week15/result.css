@@ -4,8 +4,8 @@ body {
 
 .startTxt {
     color: yellow;
-    margin-top: 300px;
-    margin-bottom: 150px;
+    margin-top: 200px;
+    margin-bottom: 10px;
     font-size: 64px;
     text-align: center;
     font-family: Helvetica
@@ -19,4 +19,10 @@ div{
   padding: 16px ;
   font-size: 32px;
   font-family: Helvetica
+}
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
